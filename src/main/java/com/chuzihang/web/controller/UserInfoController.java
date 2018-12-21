@@ -40,6 +40,7 @@ public class UserInfoController {
                     dataType = "String", paramType = "query")
     })
     @PostMapping("/selectById")
+
     public RetResult<UserInfo> selectById(@RequestParam String id) {
         UserInfo userInfo = userInfoService.selectById(id);
         return RetResponse.makeOKRsp(userInfo);
@@ -58,6 +59,7 @@ public class UserInfoController {
             @ApiImplicitParam(name = "page", value = "当前页码",
                     dataType = "Integer", paramType = "query"),
             @ApiImplicitParam(name = "size", value = "每页显示条数",
+
                     dataType = "Integer", paramType = "query")
     })
     @PostMapping("/selectAll")
