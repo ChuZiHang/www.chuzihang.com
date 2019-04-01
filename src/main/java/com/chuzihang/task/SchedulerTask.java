@@ -1,5 +1,7 @@
 package com.chuzihang.task;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +20,8 @@ import java.time.LocalDateTime;
 @Component
 public class SchedulerTask {
 
+    private Logger logger = LoggerFactory.getLogger(getClass());
+
     private int count = 0;
 
     /**
@@ -25,7 +29,7 @@ public class SchedulerTask {
      */
     @Scheduled(cron = "*/6 * * * * ?")
     private void test1() {
-        System.out.println("this is scheduler task runing  " + (count++));
+        logger.info("this is scheduler task runing  " + (count++));
     }
 
     /**
@@ -33,6 +37,6 @@ public class SchedulerTask {
      */
     @Scheduled(fixedRate = 6000)
     public void reportCurrentTime() {
-        System.out.println("现在时间：" + LocalDateTime.now());
+        logger.info("现在时间：" + LocalDateTime.now());
     }
 }
