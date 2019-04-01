@@ -25,7 +25,7 @@ public class MailServiceTest {
                 "    <h3>hello world ! 这是一封Html邮件!</h3>\n" +
                 "</body>\n" +
                 "</html>";
-        mailService.sendHtmlMail("zhuhaihao@dongsport.com", "test simple mail", content);
+        mailService.sendHtmlMail("zhuhaihao@dongsport.com", "ObParam simple mail", content);
     }
 
     @Test

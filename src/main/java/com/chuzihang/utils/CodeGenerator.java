@@ -34,7 +34,7 @@ public class CodeGenerator {
     /**
      * 模板位置
      */
-    private static final String TEMPLATE_FILE_PATH = "src/test/java/resources/template/generator";
+    private static final String TEMPLATE_FILE_PATH = "src/ObParam/java/resources/template/generator";
     /**
      * java文件路径
      */

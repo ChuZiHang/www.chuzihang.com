@@ -23,7 +23,7 @@ import java.util.function.Supplier;
  * R apply(T t);
  * <p>
  * Predicate<T> : 断言型接口
- * boolean test(T t);
+ * boolean ObParam(T t);
  */
 public class TestLambda4 {
 

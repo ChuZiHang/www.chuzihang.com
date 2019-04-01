@@ -21,12 +21,12 @@ public class UserInfoServiceImpl extends AbstractService<UserInfo> implements Us
     @Resource
     private UserInfoMapper userInfoMapper;
 
-    @Override
-    public UserInfo selectById(String id) {
-        UserInfo userInfo = userInfoMapper.selectByPrimaryKey(id);
-        if (userInfo == null) {
-            throw new ServiceException("暂无该用户");
-        }
-        return userInfo;
-    }
+//    @Override
+//    public UserInfo selectById(String id) {
+//        UserInfo userInfo = userInfoMapper.selectByPrimaryKey(id);
+//        if (userInfo == null) {
+//            throw new ServiceException("暂无该用户");
+//        }
+//        return userInfo;
+//    }
 }
